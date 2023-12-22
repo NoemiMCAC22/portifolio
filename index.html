@@ -4,11 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+        <link rel="stylesheet" href="styles.css">
+
     <title>Portifólio - Noemi Correa</title>
 </head>
 
 <body>
+
+    <!----- Header ----->
+    <section id="header">
+        <a class="header-title" href="/">
+            <h1>
+                NoemiMC.Dev
+            </h1>
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#person">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contacts">Contatos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!----- End Header ----->
+
     <!----- Person ----->
     <section id="person">
         <div class="person-content">
@@ -141,7 +169,7 @@
         </div>
     </section>
     <!----- End Person ----->
-    
+
     <!-- about -->
     <section id="about">
         <div class="background-about">
@@ -159,11 +187,11 @@
             </div>
 
             <h3>
-                Sou uma Desenvolvedora Junior Full Stack com experiência em <br> 
+                Sou uma Desenvolvedora Junior Full Stack com experiência em <br>
                 <p>XML, HTML, CSS, C#, Python</p>
             </h3>
             <h4>
-                Meu nome é Noemi Correa, tenho 37 anos. Possuo bons conhecimentos em Python,
+                Meu nome é Noemi Correa, tenho 38 anos. Possuo bons conhecimentos em Python,
                 VB.NET, C#, ASP.NET Core MVC, COBOL, Framework Angular e Odoo. <br>
                 Atualmente estou atuando como Desenvolvedora Junior Odoo. <br>
                 Entre minhas características básicas encontram-se: adaptabilidade, bom humor, dinamismo,
@@ -176,20 +204,163 @@
             </h4>
 
             <div class="button-cta">
-                <button>Currículo</button>
+                <a href="https://drive.google.com/uc?export=download&id=1IEgZ6b0KRMZ4UfoiT8RM-t1Z01Ce9SE1"
+                    download="Noemi Correa CV.pdf" aria-label="Baixar currículo de Noemi">
+                    Currículo
+                </a>
+                <!-- <button href="Public/Documents/Noemi%20Correa%20CV.pdf">Currículo</button> -->
             </div>
         </div>
 
     </section>
     <!-- end about -->
 
+    <!-- Projects -->
     <section id="projects">
         <div class="projects-title">
-            <h2>
-                PROJETOS 🧩
-            </h2>
+            <h2>PROJETOS 🧩</h2>
+        </div>
+
+        <div class="cotainer-projects">
+
+            <div class="swiper mySwiper">
+                <div class=" swiper-wrapper">
+                    <div class="swiper-slide card-project">
+
+                        <div class="image-project">
+                            <a href="/">
+                                <img src="./img/linguagens-c-e-c.webp" alt="linguagens-c-e-c">
+                            </a>
+                        </div>
+
+                        <span>Exercícios C e C++</span>
+
+                        <p>Exercícios com algumas complexidades desenvolvidos durante a formação pelo IEFP.</p>
+
+                        <div class="cta-project">
+                            <a href="https://github.com/NoemiMCAC22/FORMACAO-PROGRAMACAO-EM-C-Cpp---FUNDAMENTOS"
+                                target="_blank">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" swiper-slide card-project">
+
+                        <div class="image-project">
+                            <a href="/">
+                                <img src="./img/cobol2.jpeg" alt="cobol2">
+                            </a>
+                        </div>
+
+                        <span>Exercícios em COBOL</span>
+
+                        <p>Exercícios desenvolvidos em COBOL, sendo de listas, exemplos de fatura, entre outros.</p>
+
+                        <div class="cta-project">
+                            <a href="https://github.com/NoemiMCAC22/Formacao-COBOL/tree/main" target="_blank">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-project">
+
+                        <div class="image-project">
+                            <a href="/">
+                                <img src="./img/java1.jpeg" alt="java1">
+                            </a>
+                        </div>
+
+                        <span>Exercícios em JAVA</span>
+
+                        <p>Exercícios desenvolvidos em JAVA durante a formação pelo IEFP.</p>
+
+                        <div class="cta-project">
+                            <a href="https://github.com/NoemiMCAC22/Programacao-de-sistemas-distribuidos-JAVA"
+                                target="_blank">
+                                Código
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-project">
+
+                            <div class="image-project">
+                                <a href="/">
+                                    <img src="./img/angular1.jpeg" alt="angular1">
+                                </a>
+                            </div>
+
+                            <span>Formulário em Angular</span>
+
+                            <p>Um pequeno projeto de um formulário para recebimento de dados, feito em Angular.</p>
+
+                            <div class="cta-project">
+                                <a href="https://github.com/NoemiMCAC22/MeuFormulario/tree/master" 
+                                    target="_blank">
+                                    Código
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+    </section>
+    <!-- end Project -->
+
+    <!-- Contacts -->
+    <section id="contacts">
+        <div class="contact-title">
+            <h2>Contato 📞</h2>
+        </div>
+
+        <div class="contact-icons-wrapper">
+            <div class="contact-icon-content">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+
+                <div class="contact-info">
+                    <span>Localização</span>
+                    <p>Lisboa, Portugal</p>
+                </div>
+            </div>
+            <div class="contact-icon-content">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+
+                <div class="contact-info">
+                    <span>E-mail</span>
+                    <a href="/">
+                        noemimc_sp@hotmail.com
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- End Contacts -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Por Noemi Correa © 2023</h3>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
