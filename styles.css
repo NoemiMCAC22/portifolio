@@ -12,7 +12,6 @@
     --color-blue:#073fcc;
     --color-black: #0c0c0c;
     --color-purple: #5f01ac;
-
 }
 
 html{
@@ -22,83 +21,83 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
+    background: var(--color-black);
 }
 
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
     width:100%;
-  
+
     padding: 15px 30px;
     position: fixed;
-  
-    background: transparent;
-  
-    z-index: 2;
-  
-    transition: all .3s ease-out;
-  }
 
-  .header-title {
+    background: transparent;
+
+    z-index: 2;
+
+    transition: all .3s ease-out;
+}
+
+.header-title {
     text-decoration: none;
-  }
-  
-  .header-title h1 {
+}
+
+.header-title h1 {
     color: var(--color-white);
-  
     transition: opacity 0.3s ease;
-  }
-  
-  .header-title h1:hover{
+}
+
+.header-title h1:hover{
     opacity: .8;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     max-width: 350px;
     width: 100%;
-  }
-  
-  .navbar ul {
+}
+
+.navbar ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  
-  .navbar ul li {
+}
+
+.navbar ul li {
     list-style: none;
-  }
-  
-  .navbar ul li a {
+}
+
+.navbar ul li a {
     text-decoration: none;
     color: var(--color-white);
-  
+
     font-size: 1.4rem;
     font-weight: 700;
-  }
-  
-  .navbar ul li a:hover{
+}
+
+.navbar ul li a:hover{
     transition: all .3s ease;
     opacity: .8;
-  }
-  /* Final do Header */
+}
+/* Final do Header */
 
 #person{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     background: var(--color-black);
 }
 
 .person-content{
-    height: 100%;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 8rem 0 4rem;
     background: var(--color-black);
 }
 
@@ -129,12 +128,12 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    
+
     width: 0px;
     height: 100%;
     background: var(--color-pink);
     animation: written_tex_box 1s ease;
-    animation-delay: .5s    ;
+    animation-delay: .5s;
 }
 
 .person-content div h1:nth-child(1) span{
@@ -143,7 +142,7 @@ body{
 
 .person-content div h1:nth-child(2) span{
     animation-delay: 1.5s;
-} 
+}
 
 .person-content div h1:nth-child(3) span{
     animation-delay: 2.5s;
@@ -155,18 +154,15 @@ body{
 
 .stacks-content{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 6rem;
-
 }
 
 .stacks-content h3 {
     color: var(--color-white);
-    font-size: 1.15rem;
-    justify-content: center;
-    margin-left: 163px;
+    font-size: 1.4rem;
 }
 
 .stacks {
@@ -175,7 +171,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 135px; 
+    max-width: 420px;
 }
 
 .stacks ul li{
@@ -185,14 +181,12 @@ body{
     margin: 10px;
     padding: 10px;
     list-style: none;
-
 }
 
 .stacks ul li img {
     width: 30px;
     height: auto;
     transition: transform .3s ease;
-    
 }
 
 .stacks ul li div img:hover{
@@ -211,7 +205,7 @@ body{
 }
 
 .person-background {
-    height: 100vh;
+    min-height: 100vh;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -233,29 +227,31 @@ body{
     width: 100%;
     opacity: .7;
     z-index: -1;
-    background: 
+    background:
         linear-gradient(90deg, transparent 30%, var(--color-black)),
         linear-gradient(180deg, transparent 30%, var(--color-black)),
-        linear-gradient(0deg, transparent 65%, var(--color-black))
+        linear-gradient(0deg, transparent 65%, var(--color-black));
 }
 
 .wrapper-profile-photo {
+    width: 280px;
+    aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 14px;
     margin: 20px 15px;
     border-radius: 50%;
-    background: 
+    background:
         radial-gradient(rgba(0,0,0,0.15) 68%, transparent 0),
         radial-gradient(#000 68%, transparent 0),
         linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
-        
-    }
+}
 
 .profile-photo {
-    /* max-width: 100%; */
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -272,8 +268,9 @@ body{
     filter: brightness(1);
 }
 /* final da primeira página */
+
 #about {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: var(--color-black);
     display: flex;
@@ -282,7 +279,6 @@ body{
 
 .background-about {
     width: 50%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,7 +297,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background: 
+    background:
         linear-gradient(.25turn, transparent 30%, var(--color-black)),
         linear-gradient(.5turn, transparent 30%, var(--color-black)),
         linear-gradient(1turn, transparent 65%, var(--color-black));
@@ -318,8 +314,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    padding: 3rem;
-
+    padding: 8rem 3rem 3rem;
 }
 
 .section-subtitle h2 p{
@@ -352,12 +347,12 @@ body{
     margin: 1rem 3rem;
     font-size: 1.5rem;
 }
+
 .box-about h4 p{
     display: inline;
     padding: 2px 4px;
     color: var(--color-purple);
-    font-size: bold;
-    font-weight: 1.75rem;
+    font-weight: 700;
 }
 
 .button-cta {
@@ -368,13 +363,13 @@ body{
 
 .button-cta a {
     display: inline-block;
-  
+
     width: 100%;
     max-width: 172px;
-  
+
     padding: 10px;
     margin-bottom: 3rem;
-  
+
     font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -383,38 +378,19 @@ body{
     text-align: center;
     text-decoration: none;
     color: var(--color-black);
-    
-    border-radius: 10px;
-    cursor: pointer;
-  }
 
-  .button-cta a:hover {
-    transition: all .3s ease;
-    filter: brightness(.8);
-  }
-  
-
-/* .button-cta button {
-    display: inline-block;
-    width: 100%;
-    max-width: 172px;
-    padding: 10px;
-    margin-bottom: 3rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    letter-spacing: .15rem;
     border-radius: 10px;
     cursor: pointer;
 }
- */
-.button-cta button:hover {
-    transition: all.3s ease;
+
+.button-cta a:hover {
+    transition: all .3s ease;
     filter: brightness(.8);
 }
 /* final do sobre */
 
 #projects{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: var(--color-black);
     display: flex;
@@ -425,7 +401,7 @@ body{
     margin: 3rem;
     padding: 1rem;
     font-size: 3rem;
-    color: var(--color-white); 
+    color: var(--color-white);
 }
 
 .wrapper-projects{
@@ -438,22 +414,19 @@ body{
 }
 
 .card-project{
-    /* width: 320px; */
-  /* height: 450px; */
-  height: 100%;
-  width: 100%;
-  padding: 30px 20px 20px;
-  /* margin: 0px 10px; */
+    height: 100%;
+    width: 100%;
+    padding: 30px 20px 20px;
 
-  background: #fff;
+    background: #fff;
 
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-  border-radius: 20px;
-  z-index: 1;
+    border-radius: 20px;
+    z-index: 1;
 }
 
 .card-project::after{
@@ -466,22 +439,13 @@ body{
     background: var(--color-purple);
     border-radius: 20px 20px 0px 0px;
     z-index: -1;
-
 }
-
-/*.content-project {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-} */
 
 .image-project {
     height: 240px;
     width: 250px;
     position: relative;
-    
+
     overflow: hidden;
     border-radius: 30px;
     border: 4px solid var(--color-purple);
@@ -502,7 +466,7 @@ body{
 }
 
 .image-project img:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 .card-project span {
@@ -539,14 +503,13 @@ body{
 
 .cta-project a:hover {
     opacity: .7;
-
 }
 /* final do Project */
 
 #contacts{
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    min-height: 40vh;
     width: 100%;
     background: var(--color-black);
 }
@@ -562,7 +525,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row;
-
+    flex-wrap: wrap;
 }
 
 .contact-icon-content {
@@ -593,9 +556,8 @@ body{
 .contact-info {
     display: flex;
     flex-direction: column;
-  
     color: var(--color-white);
-  }
+}
 
 .contact-info span {
     font-size: 1.2rem;
@@ -604,12 +566,10 @@ body{
 
 .contact-info p {
     margin: .25rem 0rem;
-    
 }
 
 .contact-info a {
     margin: .25rem 0rem;
-  
     text-decoration: none;
     color: var(--color-white);
 }
@@ -622,60 +582,112 @@ body{
 #footer{
     height: 15vh;
     width: 100%;
-  
+
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    margin-top: auto; 
-  
+
+    margin-top: auto;
+
     background: #191919;
-  }
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-  
     flex-direction: column;
-  
     color: var(--color-white);
-  }
+}
 
 .swiper {
     display: flex;
     margin-top: 2rem;
-    
+
     height: 500px;
-  
+
     width: 100%;
     max-width: 1020px;
-  
-  
+
     align-items: center;
     justify-content: center;
     flex-direction: row;
-  }  
-  
+}
+
 @keyframes written_tex {
     100%{
-      color: var(--color-white);  
+        color: var(--color-white);
     }
 }
 
 @keyframes written_tex_name {
     100%{
-      color: var(--color-purple);  
+        color: var(--color-purple);
     }
 }
 
 @keyframes written_tex_box {
     50%{
-      width: 100%;
-      left: 0;  
+        width: 100%;
+        left: 0;
     }
 
     100%{
         width: 0;
         left: 100%;
-    }   
+    }
+}
+
+/* ===== Telemóvel e tablets ===== */
+@media (max-width: 768px) {
+    #header {
+        padding: 15px;
+    }
+
+    #person, #about {
+        flex-direction: column;
+    }
+
+    .person-content,
+    .person-background,
+    .background-about,
+    .box-about {
+        width: 100%;
+    }
+
+    .person-background {
+        min-height: 60vh;
+    }
+
+    .background-about {
+        height: 40vh;
+    }
+
+    .person-name {
+        margin-top: 4rem;
+    }
+
+    .person-content div h1 {
+        font-size: 3.2rem;
+        line-height: 4.4rem;
+    }
+
+    .wrapper-profile-photo {
+        width: 220px;
+    }
+
+    .box-about {
+        padding: 4rem 1.5rem;
+    }
+
+    .box-about h3,
+    .box-about h4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .wrapper-projects,
+    .swiper {
+        height: auto;
+    }
 }
